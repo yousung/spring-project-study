@@ -1,7 +1,11 @@
 package com.lovizu.bootstudy.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
- GameConsole game;
+
+  GameConsole game;
 
   public GameRunner(GameConsole game) {
     this.game = game;

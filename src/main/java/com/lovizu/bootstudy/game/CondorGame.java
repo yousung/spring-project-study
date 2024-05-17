@@ -1,6 +1,9 @@
 package com.lovizu.bootstudy.game;
 
-public class CondorGame implements GameConsole{
+import org.springframework.stereotype.Component;
+
+@Component
+public class CondorGame implements GameConsole {
 
   @Override
   public void name() {
