@@ -1,16 +1,18 @@
 package com.lovizu.bootstudy.game;
 
+import java.util.Arrays;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.lovizu.bootstudy.game")
+@ComponentScan
 public class GamingAppLauncherApplication {
 
   public static void main(String[] args) {
     try (var context = new AnnotationConfigApplicationContext(GamingAppLauncherApplication.class)) {
-      context.getBean(GameRunner.class).runner();
+      Arrays.stream(context.getBeanDefinitionNames())
+          .forEach(System.out::println);
     }
   }
 }
