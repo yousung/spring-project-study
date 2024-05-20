@@ -1,4 +1,4 @@
-package com.lovizu.bootstudy.example3.basic;
+package com.lovizu.bootstudy.example3;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
